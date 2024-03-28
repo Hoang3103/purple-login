@@ -1,0 +1,199 @@
+body{
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 13%, rgba(33,33,33,1) 33%, rgba(42,42,42,1) 52%, rgba(37,37,37,1) 75%, rgba(0,0,0,1) 93%);
+}
+.big{
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    position: absolute;
+    width: 99%;
+    border: 1px solid purple;
+    height: 97vh;
+    display: grid;
+    grid-template-columns: repeat(23, 3fr);
+    grid-auto-rows: minmax(50px, auto);
+    box-shadow: 0 0 20px 3px purple;
+    grid-gap: 0;
+}
+.child{
+    flex: 1 0 calc(33.33% - 10px);
+  /* background-color: lightblue; */
+  border: 1px solid #ccc;
+  transition: background-color 0.1s;
+  transition: box-shadow 0.5s;
+}
+.child:hover{
+    background-color: rgba(175, 0, 175, 0.89);
+    box-shadow: 0 0 50px 3px rgba(175, 0, 175, 0.89);
+}
+.child:not(:hover) {
+    transition: background-color 1.3s; 
+    
+  }
+  .login{
+    border: 2px solid rgb(63, 0, 58);
+    height: 78vh;
+    width: 31%;
+    border-radius: 50px;
+    margin-top: 4.5%;
+    background-color: #a196a0;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 20px 3px rgba(68, 0, 59, 0.76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+    /* justify-content: space-between; */
+  }
+  .title{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+  }
+  .title span{
+    font-size: 3rem;
+    color: rgb(155, 0, 155);
+    font-weight: bold;
+    /* border: 1px solid black; */
+  }
+  .title input{
+    width: 80%;
+    height: 70%;
+    border-radius: 50px;
+    border: 2px solid rgb(141, 0, 141);
+    box-shadow: 0 0 10px 0.5px rgb(99, 0, 99);
+    font-size: 1rem;
+    background-color: #ececece8;
+    
+  }
+  .title button{
+    width: 40%;
+    height: 70%;
+    border-radius: 50px;
+    background-color: rgb(107, 0, 107);
+    border: 1px solid rgb(133, 108, 128);
+    box-shadow: 0 0 7px 0.3px black;
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .title button:hover{
+    background-color: #a1a1a1;
+    border: 1px solid purple;
+    color: purple;
+    font-weight: bold;
+    box-shadow: 0 0 5px 1px purple;
+  }
+  .title button:active{
+    background-color: #cececed5;
+  }
+  .dk{
+    width: 50%;
+    height: 70%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.7rem;
+  }
+  a{
+    text-decoration: none;
+    color: #4c004e;
+    font-weight: bold;
+  }
+  .remember{
+    width: 50%;
+    height: 70%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  .remember input{
+    width: fit-content;
+    height: auto;
+  }
+  .footer{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 13%;
+    /* margin-top: 10%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+  }
+  .text{
+    /* border: 1px solid black; */
+    width: 30%;
+    height: 40%;
+    text-align: center;
+    color: #4c004e;
+  }
+.icon{
+  /* border: 1px solid black; */
+    width: 40%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+.fb{
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+.fb:hover{
+  color: #4c004e;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 2px solid #ccc; 
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+
+input[type="checkbox"]:checked + label {
+  background-color: #57004f; 
+}
+
+label::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%; 
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #ffffff;
+}
