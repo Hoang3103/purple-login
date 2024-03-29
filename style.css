@@ -36,7 +36,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 13%, rgba(33,33,33,1) 33%, rgba
   .login{
     border: 2px solid rgb(63, 0, 58);
     height: 78vh;
-    width: 31%;
+    width: 63vh;
     border-radius: 50px;
     margin-top: 4.5%;
     background-color: #a196a0;
@@ -138,8 +138,8 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 13%, rgba(33,33,33,1) 33%, rgba
   }
   .text{
     /* border: 1px solid black; */
-    width: 30%;
-    height: 40%;
+    width: auto;
+    height: auto;
     text-align: center;
     color: #4c004e;
     overflow: hidden;
